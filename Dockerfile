@@ -9,7 +9,7 @@ RUN ln -sf /bin/true /sbin/initctl
 ENV DEBIAN_FRONTEND noninteractive
 
 RUN apt-get update
-# RUN apt-get -y upgrade
+RUN apt-get -y upgrade
 
 # Basic Requirements
 RUN apt-get -y install mysql-server mysql-client nginx php5-fpm php5-mysql php-apc pwgen python-setuptools curl git unzip
